@@ -1,0 +1,136 @@
+Java Collections Framework in Java
+-> The Java collections framework provides various interfaces. 
+-> These interfaces include several methods to perform different operations on collections.
+-> The Collection interface is the root interface of the collections framework.
+-> The framework includes other interfaces as well: Map and Iterator. These interfaces may also have subinterfaces.
+
+	
+				Collection						Map 	   	-> Sorted Map		
+				    |							Iterator 	-> List Iterator
+			------------------------
+			|				|		|
+		    List	       Set     Queue	
+							^		 ^
+							|		 |
+						  Sorted   Dequeue
+							Set
+
+Collection Interface:
+	-> The Collection interface is the root interface of the collections framework hierarchy.
+	-> Java does not provide direct implementations of the Collection interface but provides implementations of its subinterfaces like List, Set, and Queue
+	
+Methods of Collections:
+	-> add(), size(), remove(), iterator(), addAll(), removeAll(), clear()
+
+----------
+Java List:
+----------
+	Extends Collection Interface	
+	Implemented by ArrayList, LinkedList, Vector, Stack
+	
+	Methods of List:
+		add()
+		addAll()
+		get()				-> helps to randomly access elements from lists
+		iterator()
+		set()
+		remove()
+		removeAll()
+		clear()
+		size()
+		toArray()
+		contains()
+
+ArrayList:
+	add(), get(index), set(index, value), remove(index), clear(), size(), sort(), clone(), contains(), indexOf()
+
+Vector:
+	Vector Vs ArrayList
+		-> The Vector class synchronizes each individual operation. 
+		-> This means whenever we want to perform some operation on vectors, the Vector class automatically applies a lock to that operation.
+		-> this continuous use of lock for each operation makes vectors less efficient.
+		-> However, in array lists, methods are not synchronized
+		->  It is recommended to use ArrayList in place of Vector because vectors less efficient.
+
+Stack:		
+	Stack class extends Vector class
+			Extends	   	Implements		    Extends
+	Collection <---------- List <------------ Vector <---------- Stack
+	
+	Methods:
+		push(element)
+		pop()			-> remove an element from the top of the stack
+		peek()		-> method returns an object from the top of the stack
+		search(element)	-> returns the position of the element from the top of the stack
+		empty()		-> check whether a stack is empty or not
+	
+	Use ArrayDeque Instead of Stack
+
+-----------
+Java Queue:
+-----------
+	Extends Collection Interface	 
+	Class that Implements Queue are ArrayDeque, LinkedList, PriorityQueue
+	Interface that extends Queue are Deque, BlockingQueue, BlockingDeque
+	Methods:
+		add()		
+		offer()	
+		element() -> Returns the head of the queue. Throws an exception if the queue is empty.
+		peek()    -> Returns the head of the queue. Returns null if the queue is empty.
+		remove()  -> Returns and removes the head of the queue. Throws an exception if the queue is empty.
+		poll()    -> Returns and removes the head of the queue. Returns null if the queue is empty.
+
+
+
+Java Priority Queue:
+	-> Provides functionality of Heap data structure.
+	-> Unlike normal queues, priority queue elements are retrieved in sorted order.
+	-> the elements of a priority queue may not be sorted. However, elements are always retrieved in sorted order.
+	
+	Custom Comparator
+
+Deque Interface:
+	-> Extends Queue Interface
+	-> Classes that implements Deque are ArrayDeque, LinkedList
+	-> Methods are addFirst(), addLast(),  offerFirst(), offerLast(), getFirst(), getLast(), 
+	ArrayDeque:
+		-> addFirst(), addLast(), offerFirst(), offerLast(), getFirst(), getLast(), peekFirst(), peekLast(), removeFirst(), removeLast()
+		   pollFirst(), pollLast()
+
+Java LinkedList:
+	-> The LinkedList class of the Java collections framework provides the functionality of the linked list data structure (doubly linkedlist).
+	Operations:
+		add(element) -> adds element at the last 
+		add(index, element) 
+		get(index)	-> index = [0, index)
+		set(index, element)
+		remove(index)
+		contains()	
+		addFirst()
+	-> LinkedList as Deque and Queue
+		addFirst()
+		addLast()
+		getFirst()
+		getLast()
+		removeFirst()
+
+Java ArrayDeque:	
+	The ArrayDeque class implements these two interfaces:
+		-> Java Queue Interface
+		-> Java Deque Interface
+			    Extends				Extends
+	Collection <-----------------  Queue <----------------- Deque
+						   ^				    ^
+						   |________________________|
+								    |
+								Array Deque
+
+
+
+	
+
+
+
+
+
+					

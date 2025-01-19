@@ -1,0 +1,69 @@
+https://www.geeksforgeeks.org/understanding-time-complexity-simple-examples/
+
+
+Learn About Complexities
+	1. Time Complexity
+	2. Space Complexity
+	
+Time Complexity
+	--> We are interested in the rate of growth over time with respect to the inputs taken during the program execution.
+	--> Rate at which the running time of the algorithm grows based on the input size.
+
+Asymptotic Notation:
+	Notation used to describes the time and space complexity of an algorithm based on the input size.
+	1. Big O notation (O): 
+		-> This notation provides an upper bound on the growth rate of an algorithm’s running time or space usage. 
+		-> It represents the worst-case scenario, i.e., the maximum amount of time or space an algorithm may need to solve a problem.
+	
+	2. Omega notation: 
+		-> This notation provides a lower bound on the growth rate of an algorithm’s running time or space usage. 
+		-> It represents the best-case scenario, i.e., the minimum amount of time or space an algorithm may need to solve a problem. 
+	
+	3. Theta notation (?): 
+		-> This notation provides both an upper and lower bound on the growth rate of an algorithm’s running time or space usage. 
+		-> It represents the average-case scenario, i.e., the amount of time or space an algorithm typically needs to solve a problem. 
+
+	Advantages of Asymptotic Notation:
+		1. Asymptotic analysis provides a high-level understanding of how an algorithm performs with respect to input size.
+		2. It is a useful tool for comparing the efficiency of different algorithms and selecting the best one for a specific problem.
+	
+	Disadvantages of Asymptotic Notation:
+		1. Asymptotic analysis does not provide an accurate running time or space usage of an algorithm.
+		2. It assumes that the input size is the only factor that affects an algorithm’s performance, which is not always the case in practice.
+		
+Time Complexity
+	Constant 		O(1)			
+	Logarithmic 	O(log n)		
+	Linear   		O(n)
+	Linearithmic	O(nlog n)
+	Quadratic 		O(n^c)
+		-> Inner for loops
+	Logarithmic - O(log(n))				
+		-> For Loops incrementing by i*C or decrementing by i/C (C is the constant)
+		-> for (int i = 1; i <= n; i *= c) 
+		-> for (int i = n; i > 0; i /= c)
+		-> Binary Search
+		
+		Time Complexity of the below expression is O(log(logn))
+		for i in range(n):
+			for j in range(i):
+Problems:
+	1. https://www.geeksforgeeks.org/practice-questions-time-complexity-analysis/
+	2. https://www.geeksforgeeks.org/analysis-algorithms-set-5-practice-problems/
+	3. https://www.geeksforgeeks.org/miscellaneous-problems-of-time-complexity/
+	
+	
+
+Space Complexity
+	-> Space Required by an algorithm as a function of input size.
+	
+	-> The term Space Complexity is misused for Auxiliary Space at many places. 
+
+	-> Auxiliary Space is the extra space or temporary space used by an algorithm.
+	-> The space Complexity of an algorithm is the total space taken by the algorithm with respect to the input size. 
+	-> Space complexity includes both Auxiliary space and space used by input.
+	
+
+Competetive Programming - Finding the right Time Complexity of a problem
+
+	-> https://www.geeksforgeeks.org/knowing-the-complexity-in-competitive-programming/

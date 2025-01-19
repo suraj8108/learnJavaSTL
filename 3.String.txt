@@ -1,0 +1,21 @@
+https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
+
+Strings
+
+	Few Functions
+		.indexOf(), .contains(String), .startsWith(String), .endsWith(String)
+	
+	Subsequence(takes 2 to the power of n time complexity) and Substrings
+	
+	Reverse and Rotation in an String
+	
+	Binary String
+	
+	Pallindrome
+	
+	Lexicographic Pattern
+	
+	Pattern Searching
+	
+Interview Question
+

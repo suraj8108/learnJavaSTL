@@ -1,0 +1,17 @@
+Linked List
+
+
+Single Linked List
+	Head -> Data | NEXT -> Data | NEXT -> Data | NEXT -> NULL
+
+Doubly Linked List
+		Head ==> PREV | Data | NEXT ==> PREV | Data | NEXT ==> PREV | Data | NEXT ==> NULL
+		
+Circular Linked List
+	Head -> Data | NEXT -> Data | NEXT -> Data | NEXT -> NULL -
+		|_____________________________________________________|
+
+Operations:
+	Insertion
+	Deletion
+	Searching

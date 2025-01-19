@@ -1,0 +1,54 @@
+Sorting Algorithm
+
+	Bubble Sort
+		-> Time Complexity is O(n^2)
+		-> Advatages
+			=> Easy to understand
+			=> Does not require additional space.
+			=> Stable sorting algorithm
+		-> Disadvantages
+			=> Large data set wont perform well.
+		-> Application:
+			-> Used in Graphic Designing
+			-> Easy to start the learning of sorting.
+	
+	Quick Sort
+		-> Divide and Conquer Algorithm
+		-> Picks an element as a pivot and partitions the given array around the picked pivot by placing the pivot in its correct position in the sorted array.
+		
+		Best Case 
+			=> O(nlogN) Occurs when the pivot element is always the middle element dividing the array in two equal parts.
+		
+		Worst Case
+			=> O(n ^ 2) Occurs when array is already sorted.
+		
+		Advatages:
+			=> Divide and Conquer algorithm
+			=> No Auxillary space.
+			=> Perfoms best in average case.
+		Disadvantages
+			=> In worst case takes a long time.
+			=> Not a stable algorithm. If two element having same key there order is not preserved.
+		Application:
+			=> Government Organization
+			=> Computer Graphics
+			=> Network Routing
+			=> Lubrary Functions
+			
+	Merge Sort:
+		-> Divide and Conquer startegy
+		-> Stable algorithm
+		
+		Advantages:
+			-> Stablity, Guranteed worst case performance.
+		
+		Disadvantages:
+			-> Space Complexity
+			-> Not in place
+			-> Slower than quick sort
+		
+	
+	Insertion Sort
+	
+	Selection Sort
+	

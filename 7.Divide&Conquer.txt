@@ -1,0 +1,29 @@
+Divide and Conquer
+
+	Advantages:
+		-> 
+
+Stack
+	Applications
+		Redo and Undo
+		Browser History
+		Function Calls
+
+Queue
+	Applications
+	
+	Circular Queue
+		-> 
+	Double Ended Queue
+		-> 
+	Priority Queue
+		-> 
+
+Tree Data Structure
+	-> Importance of Tree Data Structure
+		-> File System
+	
+	Types of Tree
+		Binary Tree	
+		Ternary Tree
+		N - ary Tree

@@ -1,0 +1,8 @@
+Searching Algorithm
+
+	Linear Search
+	
+	Binary Search
+
+	Ternary Search
+	

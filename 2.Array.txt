@@ -1,0 +1,131 @@
+
+Java Perspective
+
+Arrays
+	-> linear data structure has the same data type(Homogeneous Data types), Fixed Size and contigugous memory location
+	-> Array element memory is assigned at the compile time.
+	
+Two Types of Array
+	-> One Dimensional Array
+	-> Multi Dimensional Array
+	
+Array Operations
+	-> Traversal
+	-> Insertion
+	-> Deletion
+	-> Searching
+
+Application of Arrays:
+	-> Storing and acessing the data
+	-> Sorting, Searching, Matrices, Stack, Queue, Graphs and Dynamic Programming
+
+Advantages
+	-> Fast data retrival
+	-> Have good cache locality
+	-> Memory Efficiency -> Size of array is know at compile time.
+	-> Versatility -> Can be used to store the wide range of data types like floating, characters and even pointers or objects.
+	-> Easy to implement data structure like stack, queue, linked list, etc.
+
+DisAdvantages 
+	-> Fixed Size
+	-> Memory Allocation issues 
+		=> If the size of the array is too large then system may run out of memory, which can cause the program to crash.
+	-> Insertion and Deleltion takes more time because of continuous memory allocation
+	-> Wasted Space
+	-> Limited data type support
+	-> Lack of flexibility
+
+Applications:
+	-> ArrayList, Heap, Hash Tables
+	-> Database Records store
+
+Arrays in Java 
+	-> int[] intArray; / int intArray[];
+	-> int, byte, short, long, float, double, char, Object, Collection
+	-> Default value => boolean(false), int(0), dounble(0.0), String(null), Object(null)
+	-> The only direct superclass of an array type is java.type.Object
+
+Array Types:
+
+		Types 							Allowed Element Types
+	Premitive Type Arrays 		-> Any type which can be implicitly promoted to declared type.
+	Object Type Arrays			-> Either declared type objects or it’s child class objects.
+	Abstract Class Type Arrays	-> Its child-class objects are allowed.
+	Interface Type Arrays		-> Its implementation class objects are allowed.
+
+Arrays in Java
+	-> Functions
+		.clone()
+			=> Clones the whole Arrays and returns a new array by performing a deep copy.
+			
+	Package java.util.Arrays
+		Functions
+			-> .asList(arrayVariable) 
+				Returns: List
+				
+			-> .binarySearch(arrayVariable, keyToSearch)
+				Returns: Index of the key 
+				
+			-> .binarySearch(arrayVariable,fromIndex, toIndex, keyToSearch)
+				Returns: Index of the key 
+			
+			-> .compare(arrayVariable1, arrayVariable2)
+				Returns: 0 if both the arrays have same elements else 1 (Sequence Also Matters)
+			
+			-> .sort(arrayVariable)
+				Return: Nothing
+	
+			-> .sort(arrayVariable, fromIndex, toIndex, Comparator<T>)
+				Return: Nothing
+			
+			-> .stream(arrayVariable)
+				Return: Stream
+				
+Jagged Array:
+	A two dimensional array which has member arrays of different sizes.
+	[
+		[1, 2, 3, 4, 5, 6], [1, 2, 3, 4], [1, 2, 3]
+	]
+
+Searching:
+	-> Deterministic (Clear, Systematic Approach, Binary Search) and Non-Deterministic (Entire array needs to be traversed to search in worst case)
+	-> Types of Searching Algorithm:
+		-> Linear Search
+		-> Binary Search 
+			-> In binary search we divide an sorted array in two parts.
+			-> time complexity is log(n)
+		-> Ternary Search 
+			-> In ternary search we divide an sorted array in three parts.
+			-> Herer we will have two middle elements.
+			-> mid1 = left + (right - left) / 3 & mid2 = right - (right - left) / 3
+			-> Based on this we descide the left and right value.
+		-> Fibonacci Search
+			-> Finding the right range in which the search can be performed.
+
+
+Popular Asked Questions
+	-> No we can’t specify the size of array as long but we can specify it as int or short.
+	-> An Object is direct superclass of an array in Java.
+	-> Every array type implements the interfaces Cloneable and java.io.Serializable. 
+	-> The size of the array cannot be altered(once initialized).  However, an array reference can be made to point to another array.
+	
+------------------------------------------------------------------------------------------
+Array DSA Problems
+------------------------------------------------------------------------------------------
+
+Array Rotation:
+	Different Rechniques to reverse an array:
+		-> The Reversal Algorithm
+				==> While swapping an element in an array if its the same index then skip it.
+				
+Kadanes Algorithm:
+	So the main Intuition behind Kadane’s Algorithm is, 
+		=> The subarray with negative sum is discarded (by assigning max_ending_here = 0 in code).
+		=> We carry subarray till it gives positive sum.
+
+Dutch National Flag problem
+	=> The idea is to sort the array of size N using three pointers: lo = 0, mid = 0 and hi = N – 1 such that the array is divided into three parts:
+
+		arr[0] to arr[lo – 1]: This part will have all the zeros.
+		arr[lo] to arr[mid – 1]: This part will have all the ones.
+		arr[hi + 1] to arr[N – 1]: This part will have all the twos.
