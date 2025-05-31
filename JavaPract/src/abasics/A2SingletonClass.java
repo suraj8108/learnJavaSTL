@@ -15,11 +15,15 @@ class Universe {
 		return universeRef;
 	}
 	
+	public void getDetails() {
+		System.out.println("Hello Suraj");
+	}
 }
 
 public class A2SingletonClass {
 
 	public static void main(String[] args) {
-
+		Universe ub = Universe.getUniverse();
+		ub.getDetails();
 	}
 }

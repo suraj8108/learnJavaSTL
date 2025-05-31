@@ -246,7 +246,7 @@ KEY POINTS OF ABSTRACT:
 Java Interfaces:
 	* An interface is a fully abstract class. It includes a group of abstract methods (methods without a body).
 	* In Interface 
-		~ All the methods are implicitly "public".
+		~ All the methods are implicitly "public" and "abstract".
 		~ All fields are implicitly "public", "static" and "final" because we need to keep the value same for all the implementation.
 	* Like abstract classes, we cannot create objects of interfaces.
 	
@@ -312,7 +312,9 @@ Java Anonymous Class:
 Advantages of Anonymous Class:
 	1) In anonymous classes, objects are created whenever they are required. That is, objects are created to perform some specific tasks
 
+----------------------------
 Java Singleton Class:
+----------------------------
 	-> In Java, Singleton is a design pattern that ensures that a class can only have one object.
 	-> Used generally for the database access.
 	
@@ -321,6 +323,23 @@ Java Singleton Class:
 		2) Create a private attribute of the class type that refers to the single object.
 		3) Create a public static method that allows us to create and access the object we created. Inside the method, we will create a condition 
 			that restricts us from creating more than one object.
+
+----------------------------
+Breaking a Singleton class 
+----------------------------
+	It can be done using several techniques. Here are the most common methods:
+
+	* Reflection: 
+		-> Using Java’s Reflection API, you can access the private constructor of the Singleton class and create multiple instances.
+		-> Reflection is generally used in jakson and junit(Mockito) kind of application where we need to map access private variables or methods.
+		
+	* Serialization and Deserialization: 
+		-> By serializing and then deserializing a Singleton object, you can create a new instance.
+		
+	* Cloning: 
+		-> If the Singleton class implements the Cloneable interface, you can clone the instance to create a new one.
+	
+	* Multiple Class Loaders: Loading the Singleton class with different class loaders can result in multiple instances.
 
 ENUMS in Java:
 	In Java, an enum (short for enumeration) is a type that has a fixed set of constant values.

@@ -54,7 +54,7 @@ Vector:
 
 Stack:		
 	Stack class extends Vector class
-			Extends	   	Implements		    Extends
+					Extends	   	Implements		    Extends
 	Collection <---------- List <------------ Vector <---------- Stack
 	
 	Methods:
